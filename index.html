@@ -1,0 +1,86 @@
+                <!DOCTYPE html>
+                <html>
+                <!-- Page Head: Contains information for the web browser to read -->
+                <head>
+                   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                   <meta charset="UTF-8">
+                  <!-- Title: Max 50-60 character including spaces -->
+                  <title>AsthmaGG-Twitch</title>
+                  <meta name="keywords" content="twitch, valorant, streamer, twitch, commander candy, linux streamer, open source streamer, twitch linux streamer">
+                  <!-- Page Descrition: Recommended length is 50–160 chearacter -->
+                  <meta name="description" content="Commander Candy streams Linux open source software used for computer programming, video editing, animation and more!">
+                  <!-- CSS Links -->
+                  <!-- Our CSS File --><link rel='stylesheet' type='text/css' href='style.css'>
+                  <!-- Fontawesome Librbary --><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+                  <!-- Google Font Link-->  <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
+                </head>
+                      <!-- Main Content Area-->
+                      <div id="main-content" class="col-9">
+                        <!-- Header Container -->
+                          <div class="row header">
+                            <div class="col-5">
+                              <!-- Mobile Hamberger Menu Icon (Mobile Only) -->
+                              <button onclick="mobileMenu" id="menu-link" class="mobile-menu"><i class="fas fa-bars"></i></button>
+                              <!-- Mobile Menu Container -->
+                              <div id="menu-display"></div>
+                              
+                            </div>
+                            <div class="col-">
+                              <!-- Main Page Heading -->
+                              <h1>AsthmaGG and his co-host Nightbot </h1>
+                            </div>
+                           </div>
+                           <!-- Social Links Container -->
+                           <div class="row social" align="center">
+                              <a target = 'blank' href = 'https://www.twitch.tv/asthmagg'><i class="fab fa-twitch"></i></a>
+                              <a target = 'blank' href = 'https://www.youtube.com/user/13killerkitty'><i class="fab fa-youtube"></i></a>
+                              <a target = 'blank' href='https://twitter.com/AsthmaGG' ><i class="fab fa-twitter"></i></a>
+                              <a target = 'blank' href='https://www.instagram.com/daddy_asthmaa/'><i class='fab fa-instagram'></i></a>
+                              <a href="https://discord.gg/z5yE6E" target="blank"><i class="fab fa-discord"></i></a>
+                            </div>
+                            <!-- Section Heading-->
+                            <h2>Stream Schedule</h2>
+                            <div class="row" align="center">
+                              <div class="col-">
+                                <!-- Stream Schedule-->
+                                <div class="schedule">
+                                  <p>
+                                    Monday-Thursday <br>
+                                    7:00PM - 11:00PM MT <br>
+                                  
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="col-">
+                                  <div class="schedule">
+                                    <p>
+                                      Friday-Sunday<br>
+                                       We Dont know just... Whenever he does IG <br>
+                                    </p>
+                                  </div>
+                              </div>
+                            </div>
+                            <!-- About Me-->
+                            <div class="row" align="center">
+                              <h2>About Me</h2>
+                              <p>THE BIGGEST STREAMER TO EVER LIVE (IM 6,6 BTW)With a 1 inch peeter.</p>
+                            <!-- Twitch Channel Embedded-->
+                            <div class="row" align="center">
+                              <h2>My Twitch Channel</h2>
+                              <!-- Add a placeholder for the Twitch embed -->
+                               <div id="twitch-embed"></div>
+
+                               <!-- Load the Twitch embed script -->
+                               <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                               <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                               <script type="text/javascript">
+                                 new Twitch.Embed("twitch-embed", {
+                                   width: "100%",
+                                   height: 480,
+                                   channel: "AsthmaGG",
+                                   autoplay: false,
+                                   muted: true
+                                 });
+                               </script>
+                               <!-- More Embed Options: https://dev.twitch.tv/docs/embed/ -->

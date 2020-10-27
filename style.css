@@ -1,0 +1,291 @@
+
+                /* Responsive CSS Starts Here */
+                /* All elements width includes borders and padding*/
+                * {
+                    box-sizing: border-box;
+                }
+
+                /* Rows*/
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+
+                /* Classes containing "col-"*/
+                [class*="col-"] {
+                    float: left;
+                    padding: 15px;
+                }
+
+                /* Column width for small devices (i.e. smart phones)*/
+                [class*="col-"] {
+                    width: 100%;
+                }
+
+                /* Column width for large devices (i.e. computers)*/
+                @media only screen and (min-width: 768px) {
+                    .col-1 {width: 8.33%;}
+                    .col-2 {width: 16.66%;}
+                    .col-3 {width: 25%;}
+                    .col-4 {width: 33.33%;}
+                    .col-5 {width: 41.66%;}
+                    .col-6 {width: 50%;}
+                    .col-7 {width: 58.33%;}
+                    .col-8 {width: 66.66%;}
+                    .col-9 {width: 75%;}
+                    .col-10 {width: 83.33%;}
+                    .col-11 {width: 91.66%;}
+                    .col-12 {width: 100%;}
+                }
+
+                  /* Column width for large devices (i.e. tablets)*/
+                  @media only screen and (min-width: 600px) {
+                    .col-t-1 {width: 8.33%;}
+                    .col-t-2 {width: 16.66%;}
+                    .col-t-3 {width: 25%;}
+                    .col-t-4 {width: 33.33%;}
+                    .col-t-5 {width: 41.66%;}
+                    .col-t-6 {width: 50%;}
+                    .col-t-7 {width: 58.33%;}
+                    .col-t-8 {width: 66.66%;}
+                    .col-t-9 {width: 75%;}
+                    .col-t-10 {width: 83.33%;}
+                    .col-t-11 {width: 91.66%;}
+                    .col-t-12 {width: 100%;}
+                }
+                /* Responsive CSS Ends Here */
+
+                /* Background Color | To add an image to your background:
+                https://www.codingcommanders.com/htmlMatFiles/bImageC.php */
+                body {
+                  background-color: black;
+                  /* Default text color */
+                  color: #F4FFFE;
+                  /* Default Font */
+                  font-family: "Lato", sans-serif;
+                  height: 100%;
+
+                }
+
+                /* general link formate*/
+                a {
+                  text-decoration: none;
+                  color: violet;
+                }
+
+                a:hover {
+                  color: purple;
+                }
+
+                /* Side Navigation Container */
+                .sidenav {
+                  background-color: #111;
+                  padding-top: 60px;
+                  padding-bottom: 60PX;
+                  height: 100%;
+                  border-radius: 9px;
+                }
+
+                /* Side Navigation Links */
+                .sidenav a {
+                  display: block;
+                  color: #818181;
+                  padding: 8px 8px 8px 32px;
+                  font-size: 26px;
+                  border-radius: 6px;
+                }
+
+                /* When mouse hover on links in side Navigation */
+                .sidenav a:hover {
+                  background-color: darkred;
+                  color: white;
+                  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                }
+
+                /* Side Navigation Heading */
+                .sidenav h3 {
+                  padding: 8px 8px 8px 32px;
+                }
+
+                /* Header Container */
+                .header{
+                   border-radius: 6px;
+                   width: 97%;
+                   margin: 20px;
+                   box-shadow: 4px 4px 3.5px rgba(100,0,0,.5);
+                   border-radius: 9px;
+                   border-color: rbg(40,80,40);
+                   border-width: 1px;
+                   border-radius: 9px;
+                   background: linear-gradient(to right, rgbargb(132,0,0), rgb(0,35,88));
+                   background-color: darkred;
+                   overflow: auto;
+                }
+
+                /* top logo */
+                .logo {
+                  max-width: 100%;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+
+                /* Main Page Heading */
+                h1 {
+                  color: rgb(223,246,255);
+                  text-align: center;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  font-family: 'Share Tech', sans-serif;
+                  text-shadow: 4px 4px black;
+                  font-size: 50px;
+                }
+
+                /* Smaller h1 heading on small devices */
+                @media only screen and (max-width: 768px) {
+                  h1 {font-size: 32px; margin-top: 0px;}
+                }
+
+                /* Social Media Links Container */
+                .social {
+                  padding: 15px;
+                  margin: 5px;
+                  border-radius: 6px;
+                  position: relative;
+                  overflow: hidden;
+                }
+
+                /* Social Media Links*/
+                .social a{
+                  font-size: 30px;
+                  color: #F4FFFE;
+                  border-style: groove;
+                  border-color: grey;
+                  padding: 10px;
+                  margin: 10px;
+                  border-radius: 6px;
+                  display: inline-block
+                }
+
+                /* Social Media Links on mouse hover */
+                .social a:hover {
+                  background-color: darkred;
+                  color: white;
+                  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+                }
+
+                /* Mobile Menu Container */
+                .mobile-menu {
+                  visibility: hidden;
+                }
+
+                /* Switch to hamburger menu on small devices */
+                @media only screen and ( max-width:768px) {
+                  .mobile-menu {visibility: visible;}
+                  #menu {display: none;}
+                  #menu-display {display: block;   transition: .6s;}
+                  .sidenav {background-color: rgb(52,26,35,.5); }
+                }
+
+                .schedule {
+                  border-radius: 9px;
+                  box-shadow: 4px 4px 3.5px rgba(100,0,0,.5);
+                  background-color: #111;
+                  padding: 20px;
+                  margin: 10px;
+                  font-style: helvetica, arial, monospace;
+                }
+
+                .schedule p {
+                  color: white;
+                  line-height: 2;
+                  font-size: 20px;
+                }
+
+                p {
+                  font-size: 24px;
+                  font-style: helvetica, arial, monospace;
+                  margin: 10px;
+                  padding: 10px;
+                  line-height: 2;
+                }
+
+                h2 {
+                  text-align: center;
+                  font-size: 40px;
+                }
+
+                .side-images {
+                  background-color: #111;
+                  border-radius: 6px;
+                }
+
+                .side-images img {
+                  padding: 15px;
+                  margin: 20px;
+                  border-radius: 9px;
+                  width: 50%;
+                }
+
+                .side-images img:hover {
+                  opacity: 50%;
+                  -webkit-transition: opacity 0.6s ease-out;
+                  -moz-transition: opacity 0.6s ease-out;
+                  -o-transition: opacity 0.6s ease-out;
+                  transition: opacity 0.6s ease-out;
+                }
+
+                #menu {
+                  height: 100%;
+
+                }
+
+                .schedule a:hover {
+                  opacity: 50%;
+                  -webkit-transition: opacity 0.6s ease-out;
+                  -moz-transition: opacity 0.6s ease-out;
+                  -o-transition: opacity 0.6s ease-out;
+                  transition: opacity 0.6s ease-out;
+                }
+
+                img.me {
+                  padding: 25px;
+                  margin: 25px;
+                  border-radius: 9px;
+                  max-width: 100%;
+                  height: auto;
+                  opacity: .6;
+                }
+
+                footer  {
+                  text-align: center;
+                }
+
+                .for-me {
+                  line-height: 1.5;
+                }
+
+                .red {
+                  color: red;
+                }
+
+                .yellow {
+                  color: yellow;
+                }
+
+                .credits {
+                  font-size: 20px;
+                  line-height: 2;
+                }
+
+                .green {
+                  color: green;
+                }
